@@ -37,7 +37,7 @@ Exploratory:
 This script reuses the Stage 7 hourly panel and Stage 7 modeling functions,
 so it does NOT rescan chartevents/labevents.
 
-Outputs to upload:
+Generated audit outputs:
     outputs/14_STAGE8B_CAPECOD_DYNAMIC.csv
     outputs/14B_STAGE8B_STRICTCAP_SENSITIVITY.csv
     outputs/14C_STAGE8B_WEIGHT_DIAGNOSTICS.csv
@@ -502,7 +502,7 @@ def main():
         print(cape.to_string(index=False))
         print("\n=== Broad Stage7 vs high-specificity Stage8B ===")
         print(compare.to_string(index=False))
-        print("\nUpload these files:")
+        print("\nGenerated output files:")
         for p in [
             OUT_CAPE,OUT_STRICT,OUT_WEIGHT,OUT_COMPARE,OUT_IV,OUT_MODEL
         ]:

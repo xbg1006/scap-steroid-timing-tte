@@ -720,7 +720,7 @@ def main():
     print("\n" + "=" * 110)
     print("outcome-blind 2-hour design audit COMPLETE")
     print("=" * 110)
-    print("\nUpload these five CSVs:")
+    print("\nGenerated five audit CSVs:")
     for p in [OUT_SELECT, OUT_BAL, OUT_WEIGHT, OUT_EFFECT, OUT_RECOMMEND]:
         print(" ", p)
 

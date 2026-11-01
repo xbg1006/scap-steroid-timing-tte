@@ -615,7 +615,7 @@ def main():
         print("\n" + "=" * 110)
         print("STAGE 10 V7 DIAGNOSTIC COMPLETE")
         print("=" * 110)
-        print("\nUpload these five CSVs:")
+        print("\nGenerated five audit CSVs:")
         for p in [OUT_EFFECT, OUT_WEIGHT, OUT_BAL, OUT_SUM, OUT_COMPARE]:
             print(" ", p)
 

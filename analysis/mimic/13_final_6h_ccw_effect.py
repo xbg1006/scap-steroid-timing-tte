@@ -1076,7 +1076,7 @@ def main():
     print("\n" + "=" * 112)
     print("STAGE 10 frozen final 6-hour analysis FINAL COMPLETE")
     print("=" * 112)
-    print("\nUpload these five CSVs:")
+    print("\nGenerated five audit CSVs:")
     for p in [
         OUT_EFFECT,
         OUT_BOOT,

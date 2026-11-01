@@ -959,7 +959,7 @@ def main():
         print("\n" + "=" * 100)
         print("STAGE 10 V6 COMPLETE")
         print("=" * 100)
-        print("\nUpload these five CSVs:")
+        print("\nGenerated five audit CSVs:")
         for p in [
             OUT_EFFECT,
             OUT_WEIGHTS,

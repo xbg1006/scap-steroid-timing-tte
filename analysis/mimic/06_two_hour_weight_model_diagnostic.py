@@ -58,7 +58,7 @@ outputs/stage7_hourly_panel.parquet
 outputs/stage5_5_analysis_cohort.parquet
 14_run_high_specificity_ccw.py  (for CAPE-COD-like patient IDs)
 
-OUTPUTS TO UPLOAD
+GENERATED AUDIT OUTPUTS
 -----------------
 outputs/16_FINAL_SEQUENTIAL_PRIMARY.csv
 outputs/16B_FINAL_TRIAL_HOUR_EFFECTS.csv
@@ -913,7 +913,7 @@ def main():
         print("\n" + "=" * 100)
         print("STAGE 10 V3 DIAGNOSTIC COMPLETE")
         print("=" * 100)
-        print("\nUpload these five CSVs:")
+        print("\nGenerated five audit CSVs:")
         for p in [OUT_EFFECT, OUT_BAL, OUT_PS, OUT_HOUR, OUT_MODEL]:
             print(" ", p)
 

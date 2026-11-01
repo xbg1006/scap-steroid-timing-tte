@@ -1372,7 +1372,7 @@ def main():
     print("STAGE 10 V9 COMPLETE")
     print("=" * 112)
 
-    print("\nUpload these 8 CSVs:")
+    print("\nGenerated eight audit CSVs:")
     for p in [
         OUT_SUMMARY,
         OUT_RECENT_SELECT,

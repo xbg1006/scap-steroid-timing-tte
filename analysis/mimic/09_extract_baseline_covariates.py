@@ -12,14 +12,14 @@ and audits whether the treated and untreated groups can be made comparable.
 Required local file from Stage 4:
     outputs/stage4_trial_eligible_cohort.parquet
 
-Outputs to upload:
+Generated audit outputs:
     outputs/09_STAGE5_MISSINGNESS.csv
     outputs/09B_STAGE5_UNADJUSTED_SMD.csv
     outputs/09C_STAGE5_POSITIVITY.csv
     outputs/09D_STAGE5_COVARIATE_SUMMARY.csv
     outputs/09E_STAGE5_ITEM_MAP.csv
 
-Keep local, do NOT upload:
+Restricted local analysis outputs:
     outputs/stage5_analysis_cohort.parquet
 
 First run scans selected rows from:
@@ -828,10 +828,10 @@ def main():
         if len(high_missing):
             print(high_missing[["variable","missing_pct"]].to_string(index=False))
 
-        print("\nSaved small files to upload:")
+        print("\nSaved aggregate audit files:")
         for p in [OUT_MISSING, OUT_SMD, OUT_POS, OUT_SUMMARY, OUT_ITEMS]:
             print(f"  {p}")
-        print(f"\nLocal only (do NOT upload): {OUT_COHORT}")
+        print(f"\nRestricted local patient-level output: {OUT_COHORT}")
         print("\nNext step after review: Stage 6 clone-censor-weight target trial.")
         print("Do NOT interpret crude treated-vs-untreated mortality as a treatment effect.")
 

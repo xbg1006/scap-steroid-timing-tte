@@ -922,7 +922,7 @@ def main():
     print("TARGET ITEM 10 AUDIT COMPLETE")
     print("=" * 110)
     print(f"Outputs: {OUTDIR}")
-    print("\nSend back the entire TARGET10_followup_audit folder.")
+    print("\nTARGET item 10 audit outputs are available in TARGET10_followup_audit.")
 
 
 if __name__ == "__main__":

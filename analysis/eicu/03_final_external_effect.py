@@ -1436,7 +1436,7 @@ def main():
     print("\n" + "=" * 116)
     print("E3 FINAL EXTERNAL EFFECT COMPLETE")
     print("=" * 116)
-    print("\nUpload these seven files:")
+    print("\nGenerated seven output files:")
     for p in [
         OUT_GATE,
         OUT_EFFECT,

@@ -29,12 +29,12 @@ Required prior files/tables:
        respiratory_support_events
        vasopressor_events
 
-Outputs (upload only CSV summaries, NOT the parquet):
+Outputs (retain only aggregate CSV summaries for reporting, NOT the parquet):
   outputs/08_STAGE4_COHORT_FLOW.csv
   outputs/08B_STAGE4_EXPOSURE_SHOCK_COUNTS.csv
   outputs/08C_STAGE4_DRUG_TIMING.csv
   outputs/08D_STAGE4_ELIGIBILITY_DIAGNOSTICS.csv
-  outputs/stage4_trial_eligible_cohort.parquet   <-- local analysis file; do not upload
+  outputs/stage4_trial_eligible_cohort.parquet   <-- restricted local analysis file
 
 Reusable caches created:
   cache/stage4_emar_window.parquet
@@ -839,8 +839,8 @@ def main():
         print(f"  {OUT_STRATA}")
         print(f"  {OUT_DRUG}")
         print(f"  {OUT_DIAG}")
-        print(f"  {OUT_COHORT}  <-- keep local; do NOT upload")
-        print("\nPlease upload ONLY these small CSV files:")
+        print(f"  {OUT_COHORT}  <-- restricted local analysis file")
+        print("\nGenerated small audit CSV files:")
         print("  08_STAGE4_COHORT_FLOW.csv")
         print("  08B_STAGE4_EXPOSURE_SHOCK_COUNTS.csv")
         print("  08C_STAGE4_DRUG_TIMING.csv")

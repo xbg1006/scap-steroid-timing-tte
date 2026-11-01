@@ -1045,7 +1045,7 @@ def main():
     print("\nRecommendation:")
     print(decision.to_string(index=False))
 
-    print("\nUpload these files (zip the whole outputs_eicu_E1 folder is easiest):")
+    print("\nGenerated outputs are available in the outputs_eicu_E1 folder:")
     for p in sorted(OUTPUT_DIR.iterdir()):
         print(" ", p.name)
 

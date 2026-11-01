@@ -760,7 +760,7 @@ def main():
     print("\nInterpretation flag:")
     print(flag.to_string(index=False))
 
-    print("\nUpload these six files:")
+    print("\nGenerated six output files:")
     for p in [
         OUT_PRIMARY_AUDIT,
         OUT_FIXED,

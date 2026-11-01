@@ -428,7 +428,7 @@ def main():
     print(f"  {OUT_MAIN}")
     print(f"  {OUT_EVENTS}")
     print(f"  {OUT_CONCORD}")
-    print("\nPlease upload ONLY 07_EMAR_EXPOSURE_AUDIT.csv and 07C_EMAR_RX_CONCORDANCE.csv.")
+    print("\nGenerated exposure-audit summary files: 07_EMAR_EXPOSURE_AUDIT.csv and 07C_EMAR_RX_CONCORDANCE.csv.")
     print("07B is useful only if event_txt/route classification needs debugging.")
 
     con.close()

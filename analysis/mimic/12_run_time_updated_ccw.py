@@ -37,7 +37,7 @@ Exploratory exposure sensitivities:
 These are exposure-definition sensitivities; other systemic steroids are permitted
 as co-interventions and therefore these are NOT equivalent to hydrocortisone-vs-none.
 
-Outputs to upload:
+Generated audit outputs:
     outputs/12_STAGE7_DYNAMIC_PRIMARY.csv
     outputs/12B_STAGE7_WEIGHT_DIAGNOSTICS.csv
     outputs/12C_STAGE7_DYNAMIC_BALANCE.csv
@@ -45,7 +45,7 @@ Outputs to upload:
     outputs/12E_STAGE7_MODEL_DIAGNOSTICS.csv
     outputs/12F_STAGE7_STAGE6_COMPARISON.csv
 
-Local caches (do not upload):
+Local caches (keep restricted locally):
     cache/stage7_dynamic_vitals.parquet
     cache/stage7_dynamic_labs.parquet
     cache/stage7_support_events.parquet
@@ -1558,7 +1558,7 @@ def main():
         print("\n" + "=" * 98)
         print("STAGE 7 COMPLETE")
         print("=" * 98)
-        print("Upload these files:")
+        print("Generated output files:")
         for p in [
             OUT_PRIMARY,
             OUT_WEIGHT,

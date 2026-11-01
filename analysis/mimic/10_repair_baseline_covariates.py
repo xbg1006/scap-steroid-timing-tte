@@ -21,7 +21,7 @@ Primary windows:
 - labs: respiratory t0 - 24 h through t0
 - no post-t0 measurements are used
 
-Outputs to upload:
+Generated audit outputs:
     outputs/10_STAGE5_5_MISSINGNESS.csv
     outputs/10B_STAGE5_5_UNADJUSTED_SMD.csv
     outputs/10C_STAGE5_5_POSITIVITY.csv
@@ -888,7 +888,7 @@ def main():
         print("\nTop baseline imbalances:")
         print(smd_df[["variable","level","abs_smd","treated_summary","untreated_summary"]].head(15).to_string(index=False))
 
-        print("\nUpload these 6 small CSVs:")
+        print("\nGenerated six small audit CSVs:")
         for p in [OUT_MISSING,OUT_SMD,OUT_POS,OUT_SUMMARY,OUT_ITEMS,OUT_DIAG]:
             print(" ",p)
         print("\nKeep local only:",OUT_COHORT)

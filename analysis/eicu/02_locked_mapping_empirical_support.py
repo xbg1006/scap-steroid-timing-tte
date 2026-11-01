@@ -1625,7 +1625,7 @@ def main():
     print("E2 COMPLETE — NO MORTALITY EFFECT WAS OPENED")
     print("="*112)
     print(rec.to_string(index=False))
-    print("\nUpload the entire outputs_eicu_E2 folder as a ZIP.")
+    print("\nGenerated outputs are available in the outputs_eicu_E2 folder.")
 
 
 if __name__=="__main__":

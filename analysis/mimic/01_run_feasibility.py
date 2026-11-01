@@ -66,7 +66,7 @@ def main():
         print(f"  {paths['cohort_parquet']}")
         print('\n注意：这只是 feasibility，不是最终论文队列。正式分析前还要加强 CAP 影像/感染证据、既往激素适应证、实际给药、time-zero 与因果设计。')
     except Exception:
-        print('\n[运行失败] 完整错误如下，直接把这一段发给 ChatGPT 即可继续改：\n')
+        print('\n[运行失败] 完整错误如下：\n')
         traceback.print_exc()
         raise
     finally:
