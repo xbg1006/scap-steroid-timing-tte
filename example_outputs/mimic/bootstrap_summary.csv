@@ -1,2 +1,2 @@
-﻿population,bootstrap_success_n,rd_bootstrap_median,rd_bootstrap_p025,rd_bootstrap_p975,rr_bootstrap_median,rr_bootstrap_p025,rr_bootstrap_p975,checkpoint_file
-broad severe CAP primary population,300,0.0552513757927425,-0.0041010498982679,0.1201589953952386,1.1475639086012768,0.9893444765125404,1.335650979000664,D:\pul\MIMIC_SCAP_STEROID_FEASIBILITY\outputs\checkpoints\stage10_v10_broad_6h_pure_ccw_cluster_bootstrap.csv
+population,bootstrap_success_n,rd_bootstrap_median,rd_bootstrap_p025,rd_bootstrap_p975,rr_bootstrap_median,rr_bootstrap_p025,rr_bootstrap_p975,checkpoint_file
+broad severe CAP primary population,300,0.0552513757927425,-0.0041010498982679,0.1201589953952386,1.1475639086012768,0.9893444765125404,1.335650979000664,checkpoints/stage10_v10_broad_6h_pure_ccw_cluster_bootstrap.csv

@@ -836,7 +836,7 @@ def main():
         print("Do NOT interpret crude treated-vs-untreated mortality as a treatment effect.")
 
     except Exception:
-        print("\n[FAILED] Copy the full traceback to ChatGPT:\n")
+        print("\n[FAILED] Full traceback:\n")
         traceback.print_exc()
         raise
     finally:

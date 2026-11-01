@@ -515,7 +515,7 @@ def main():
         print("- IV-only remains exploratory because only ~65 initiators are expected.")
 
     except Exception:
-        print("\n[FAILED] Copy the entire traceback to ChatGPT:\n")
+        print("\n[FAILED] Full traceback:\n")
         traceback.print_exc()
         raise
 

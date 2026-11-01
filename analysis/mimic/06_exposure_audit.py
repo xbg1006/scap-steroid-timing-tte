@@ -3,7 +3,7 @@ from __future__ import annotations
 """
 Stage 2 exposure / indication audit for the MIMIC severe-CAP steroid project.
 
-Put this file in the project root (same folder as config.py) and run it in PyCharm.
+Put this file in the project root (same folder as config.py) and run it from a terminal.
 It DOES NOT export patient-level data.
 
 Required from Stage 1:
@@ -506,5 +506,5 @@ if __name__ == "__main__":
     except Exception as exc:
         print("\n[ERROR] Stage-2 audit failed:")
         print(exc)
-        print("\nPlease copy the FULL error message back to ChatGPT; do not modify the data files.")
+        print("\nFull traceback:")
         raise

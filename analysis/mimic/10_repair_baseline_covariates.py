@@ -895,7 +895,7 @@ def main():
         print("\nNo causal effect has been estimated yet.")
 
     except Exception:
-        print("\n[FAILED] Copy the complete traceback to ChatGPT:\n")
+        print("\n[FAILED] Full traceback:\n")
         traceback.print_exc()
         raise
     finally:

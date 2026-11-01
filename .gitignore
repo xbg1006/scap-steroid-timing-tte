@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration (examples remain tracked)
+analysis/mimic/config.py
+analysis/eicu/config.py
+
+# Restricted/local analysis outputs and caches
+analysis/mimic/outputs/
+analysis/mimic/cache/
+analysis/eicu/outputs_eicu_*/
+analysis/eicu/cache/
+**/checkpoints/
+
+# Patient-level / source-data formats
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+*.csv.gz
+*.tsv.gz
+*.h5
+*.hdf5
+*.h5ad
+
+# Temporary files
+*.tmp
+*.temp
+~$*

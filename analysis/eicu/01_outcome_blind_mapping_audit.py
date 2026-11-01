@@ -39,7 +39,13 @@ import pandas as pd
 # USER PATH — already filled from your screenshot.
 # Change ONLY this line if your folder moves.
 # =============================================================================
-DATA_DIR = Path(os.environ.get("EICU_DATA_DIR", "PATH_TO_EICU_DATA"))
+try:
+    import config as _local_config
+except ModuleNotFoundError:
+    _local_config = None
+
+_config_eicu_dir = getattr(_local_config, "EICU_DATA_DIR", None) if _local_config is not None else None
+DATA_DIR = Path(os.environ.get("EICU_DATA_DIR", str(_config_eicu_dir) if _config_eicu_dir is not None else "PATH_TO_EICU_DATA"))
 
 # Outputs are written beside this script, not inside the raw eICU folder.
 HERE = Path(__file__).resolve().parent

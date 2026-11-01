@@ -59,7 +59,13 @@ except Exception as exc:
 # =============================================================================
 # PATHS
 # =============================================================================
-DATA_DIR = Path(os.environ.get("EICU_DATA_DIR", "PATH_TO_EICU_DATA"))
+try:
+    import config as _local_config
+except ModuleNotFoundError:
+    _local_config = None
+
+_config_eicu_dir = getattr(_local_config, "EICU_DATA_DIR", None) if _local_config is not None else None
+DATA_DIR = Path(os.environ.get("EICU_DATA_DIR", str(_config_eicu_dir) if _config_eicu_dir is not None else "PATH_TO_EICU_DATA"))
 HERE = Path(__file__).resolve().parent
 
 E1_DIR_CANDIDATES = [

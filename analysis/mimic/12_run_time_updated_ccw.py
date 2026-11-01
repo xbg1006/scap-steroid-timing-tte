@@ -77,7 +77,7 @@ try:
 except Exception as e:
     raise RuntimeError(
         "Stage 7 needs scikit-learn.\n"
-        "Run in the PyCharm terminal:\n"
+        "Run in a terminal:\n"
         "    pip install scikit-learn\n"
         f"Original import error: {e}"
     )
@@ -1578,7 +1578,7 @@ def main():
         print("\nDo not turn the 24h result into a clinical conclusion until all 4 checks pass.")
 
     except Exception:
-        print("\n[FAILED] Copy the entire traceback to ChatGPT:\n")
+        print("\n[FAILED] Full traceback:\n")
         traceback.print_exc()
         raise
 

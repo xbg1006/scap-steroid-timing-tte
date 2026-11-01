@@ -13,7 +13,7 @@ Put this file in the SAME project root as:
     01_run_feasibility.py
     outputs/feasibility_cohort.parquet
 
-Run in PyCharm.
+Run from a terminal.
 
 Outputs:
     outputs/07_EMAR_EXPOSURE_AUDIT.csv

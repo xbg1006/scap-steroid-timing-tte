@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the associated article and this software release."
 title: "Timing of corticosteroid initiation in severe community-acquired pneumonia: sequential target-trial emulation code"
 version: "1.0.0"
-date-released: "2026-10-29"
+date-released: "2026-11-01"
 authors:
   - family-names: "He"
     given-names: "Lianqing"
@@ -17,7 +17,7 @@ authors:
   - family-names: "Zhang"
     given-names: "Xuan"
 license: MIT
-repository-code: "https://github.com/TO-BE-ADDED/scap-steroid-timing-tte"
+repository-code: "https://github.com/xbg1006/scap-steroid-timing-tte"
 keywords:
   - target trial emulation
   - corticosteroids
