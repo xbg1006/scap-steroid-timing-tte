@@ -1,0 +1,2 @@
+﻿bootstrap_success_n,rd_bootstrap_median,rd_bootstrap_p025,rd_bootstrap_p975,rr_bootstrap_median,rr_bootstrap_p025,rr_bootstrap_p975,checkpoint_file
+300,0.04022846739645067,-0.1929641085667108,0.7604160592068233,1.241190613542209,0.10827195803602727,13.45472187287526,D:\pul\MIMIC_SCAP_STEROID_FEASIBILITY\outputs_eicu_E3\checkpoints\eicu_e3_broad_6h_pure_ccw_cluster_bootstrap.csv

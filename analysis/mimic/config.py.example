@@ -1,0 +1,32 @@
+from pathlib import Path
+import os
+
+# Authorized local MIMIC-IV root. The frozen project used MIMIC-IV v3.1.
+DATA_ROOT = Path(os.environ.get("MIMIC_DATA_ROOT", r"/ABSOLUTE/PATH/TO/mimic-iv-3.1"))
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+CACHE_DIR = PROJECT_ROOT / "cache"
+OUTPUT_DIR = PROJECT_ROOT / "outputs"
+
+ICU_WITHIN_HOSPITAL_HOURS = 48
+EARLY_STEROID_WINDOW_HOURS = 24
+PRE_T0_STEROID_LOOKBACK_HOURS = 24
+SUPPORT_PRE_ICU_HOURS = 6
+SUPPORT_POST_ICU_HOURS = 48
+PHENOTYPE_WINDOW_HOURS = 6
+
+HFNC_MIN_FLOW_LPM = 30.0
+HFNC_MIN_FIO2_PERCENT = 40.0
+HFNC_PAIR_WINDOW_HOURS = 2
+
+FORCE_REBUILD_CACHE = False
+DUCKDB_THREADS = max(2, min(8, (os.cpu_count() or 4) - 1))
+EXCEL_COHORT_PREVIEW_ROWS = 3000
+
+GO_NOGO_THRESHOLDS = {
+    "cap_proxy": 1000,
+    "severe_cap_proxy": 500,
+    "early_systemic_steroid": 200,
+    "early_hydrocortisone": 100,
+    "hospital_deaths_severe_cap": 100,
+}

@@ -1,0 +1,7 @@
+duckdb
+numpy==2.4.6
+pandas==3.1.0
+scikit-learn==1.9.1
+scipy
+pyarrow==26.0.0
+openpyxl

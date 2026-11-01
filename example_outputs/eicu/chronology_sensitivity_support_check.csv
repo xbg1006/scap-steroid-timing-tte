@@ -1,0 +1,2 @@
+﻿analysis,stays_n,person_trials_n,recent_representation_ratio,recent_weight_ess,recent_max_abs_smd,recent_n_abs_smd_gt_0_10,defer_max_abs_smd_over_intervals,defer_any_variable_gt_0_10,frozen_support_gate_pass
+strict chronology exclusion,5302,47148,1.0437550111245664,402.10955073432217,0.073117040737513,0,0.004247602142442325,0,1

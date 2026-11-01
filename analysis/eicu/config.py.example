@@ -1,0 +1,8 @@
+from pathlib import Path
+
+# Directory containing the public eICU scripts.
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+# Directory containing an authorized local copy of the eICU Collaborative
+# Research Database. Do not commit source data or derived patient-level caches.
+EICU_DATA_DIR = Path(r"/ABSOLUTE/PATH/TO/AUTHORIZED/EICU/DATA")
