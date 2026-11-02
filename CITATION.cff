@@ -18,6 +18,10 @@ authors:
     given-names: "Xuan"
 license: MIT
 repository-code: "https://github.com/xbg1006/scap-steroid-timing-tte"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23858634"
+    description: "Archived reproducibility code on Zenodo"
 keywords:
   - target trial emulation
   - corticosteroids
