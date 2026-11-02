@@ -7,6 +7,11 @@ least 6 hours** among patients with severe community-acquired pneumonia.
 MIMIC-IV is used for design development and primary causal estimation; the eICU
 Collaborative Research Database is used for locked external evaluation.
 
+## Archived release
+
+The reproducibility code for this study is archived on Zenodo:
+**DOI:** https://doi.org/10.5281/zenodo.23858634
+
 ## Scientific design
 
 - Sequential trial baselines: 0, 2, 4, ..., 18 hours after respiratory time zero.
